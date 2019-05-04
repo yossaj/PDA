@@ -5,8 +5,8 @@
 ```ruby
 
 class CardGame
-
-# naming convention - 'check_for_ace' might be slightly better
+# class has not been initalized
+# naming convention - 'check_for_ace' might be slightly better. Line 11, used '=' instead of '=='
   def checkforAce(card)
     if card.value = 1
       return true
@@ -26,7 +26,7 @@ end
 end
 
 
-# 1. line 31. 'total' not defined. total = 0. 2. line 34 the return statement should be outside the for loop, otherwise the loop will stop after the value of the first card is added to the total. 'total' will be returned as an integer, total.to_s would be better and there should be a space added before 'total'. 
+# 1. line 31. 'total' not defined. total = 0. 2. line 34 the return statement should be outside the for loop, otherwise the loop will stop after the value of the first card is added to the total. 'total' will be returned as an integer, total.to_s would be better and there should be a space added before 'total'.
 def self.cards_total(cards)
   total
   for card in cards
@@ -34,4 +34,6 @@ def self.cards_total(cards)
     return "You have a total of" + total
   end
 end
+
+# missing end statement for class
 ```
